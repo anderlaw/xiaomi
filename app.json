@@ -2,12 +2,50 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/game/game"
+    "pages/classify/classify",
+    "pages/found/found",
+    "pages/mine/mine",
+    "pages/shopcar/shopcar"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小米商城Lite"
+ 
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"./icon/home.png",
+        "selectedIconPath":"./icon/home_active.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "./icon/classify.png",
+        "selectedIconPath": "./icon/classify_active.png"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "text": "发现",
+        "iconPath": "./icon/found.png",
+        "selectedIconPath": "./icon/found_active.png"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车",
+        "iconPath": "./icon/shopcar.png",
+        "selectedIconPath": "./icon/shopcar_active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./icon/me.png",
+        "selectedIconPath": "./icon/me_active.png"
+      }
+    ]
   }
 }
