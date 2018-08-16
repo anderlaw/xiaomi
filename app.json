@@ -46,6 +46,7 @@
         "iconPath": "./icon/me.png",
         "selectedIconPath": "./icon/me_active.png"
       }
-    ]
+    ],
+    "selectedColor":"#129bdb"
   }
 }

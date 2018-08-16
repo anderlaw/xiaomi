@@ -12,13 +12,83 @@
   </view>
 </view> -->
 <!-- new view -->
+<!-- <view style='padding:10px;background-color:#ff6902;'>
+  <input style='border-radius:10px;background-color:#fff;font-size:12px;line-height:30px;padding-left:10px;' placeholder="输入文字检索商品" confirm-type='send' auto-focus/>
+</view> -->
+
+<!-- 轮播图 -->
+<swiper indicator-dots="{{true}}"
+  autoplay="{{false}}" interval="{{3000}}">
+  <block wx:for="{{imgList}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style='width:100%;'/>
+    </swiper-item> 
+  </block>
+</swiper>
+<!-- tab-item -->
 <view>
-  <image style="width: 100%; height: 200px" mode="scaleToFill" src="../../images/home_banner.jpg">
-  </image>
-</view>
-<view style='width:100%;background-color:#ffffff;height:60px;line-height:60px;text-align:center;'>
-  <view style='width:70%;display:inline-block;'>
-    <button size='mini' style='background-color:#ff6902;color:#fff5cf;'>8.10-8.17</button>
-    <text style='font-size:12px;'>七夕示爱攻略</text>
+  <div class="clearfix">
+    <div class="nav__tab">
+      <view>
+        <icon style='color:#f16319;' class='iconfont icon-shouji'></icon>
+      </view>
+      <text>手机</text>
+    </div>
+    <div class="nav__tab">
+      <view>
+        <icon style='color:#f3a600;' class='iconfont icon-dianshi'></icon>
+      </view>
+      <text>电视</text>
+    </div>
+    <div class="nav__tab">
+      <view>
+        <icon style='color:#7ab318;' class='iconfont icon-diannaopcxianshiqi'></icon>
+      </view>
+      <text>电脑</text>
+    </div>
+    <div class="nav__tab">
+      <view>
+        <icon style='color:#5ac2ff;' class='iconfont icon-zhineng'></icon>
+      </view>
+      <text>智能</text>
+    </div>
+    <div class="nav__tab">
+      <view>
+        <icon style='color:#b49bdf;' class='iconfont icon-xinpin'></icon>
+      </view>
+      <text>新品</text>
+    </div>
+  </div>
+  <!-- 间隔条 -->
+  <view style='height:10px;background-color:#ebebeb;'>
   </view>
 </view>
+<!-- 商品展示 -->
+<view>
+  <div class="clearfix">
+    <div class="goods__item--big">
+      <image src='../../images/手机.jpg' style='width:100%;'></image>
+    </div>
+    <div class="goods__item--small">
+      <image src='../../images/耳机.jpg' style='width:100%;height:calc(50%);'></image>
+      <image src='../../images/减免.jpg' style='width:100%;height:calc(50%);'></image>
+    </div>
+  </div>
+</view>
+<!-- <view style='display:flex;'>
+  <div style="flex-grow:1;">
+    
+  </div>
+  <div style="flex-grow:1;display:flex;align-content:center;">
+    <div>
+      <view style='width:100%;'>
+        <image src='../../images/耳机.jpg' style='width:100%;'></image>
+      </view>
+    </div>
+    <div>
+      <view style='width:100%;'>
+        <image src='../../images/减免.jpg' style='width:100%;'></image>
+      </view>
+    </div>
+  </div>
+</view> -->

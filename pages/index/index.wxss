@@ -1,5 +1,5 @@
 /**index.wxss**/
-.userinfo {
+/* .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,18 +18,31 @@
 
 .usermotto {
   margin-top: 200px;
+} */
+.clearfix::after{
+  clear: both;
+  display: block;
+  content: '';
 }
-.navbar{
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
-  font-size: 12px;
-}
-.navbar__item{
+.nav__tab{
   float: left;
-  width:20%;
-  height: 40px;
+  width: 20%;
   text-align: center;
+  font-size: 13px;
+  color: #818181;
+  padding: 10px 0;
 }
+.iconfont{
+  font-size: 20px;
+  padding-bottom:4px;
+}
+
+/* 商品展示样式 */
+.goods__item--big{
+  float: left;
+  width: 50%;
+}
+.goods__item--small{
+  float: left;
+  width: 50%;
+} 
